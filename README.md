@@ -169,7 +169,7 @@ export const projectsData = [
   {
     number: 1,
     name: "Project Name",
-    imgLink: `${CONFIG.assets.projects}/project-image.png`,
+    img: `${CONFIG.assets.projects}/project-image.png`,
     liveUrl: "https://www.example.com",
   },
   // Add more project objects as needed
@@ -194,7 +194,7 @@ To showcase your projects on the website, follow these steps:
 6. Each project object should contain the following properties:
    - `number` (optional): A number to represent the project's order (e.g., 1, 2, 3).
    - `name`: The name or title of the project.
-   - `imgLink`: The file name of the project's preview image. Ensure the image file is placed in the `media/projects` folder.
+   - `img`: The file name of the project's preview image. Ensure the image file is placed in the `media/projects` folder.
    - `liveUrl` (optional): The URL of the live version of the project.
 
 ```javascript
@@ -202,7 +202,7 @@ export const projectsData = [
     {
     number: 1,
     name: "Project Name",
-    imgLink: "project_image.jpg",
+    img: "project_image.jpg",
     liveUrl: "https://www.example.com",
     },
     // Add more project objects as needed
