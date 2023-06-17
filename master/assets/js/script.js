@@ -119,7 +119,7 @@ window.onload = function () {
   const initialProjectID = RANDOM_INITIAL_PROJECT
     ? Math.floor(Math.random() * displayedProjects)
     : 0;
-  const initialProject = projectsData[initalProjectID];
+  const initialProject = projectsData[initialProjectID];
 
   handleClickProjectButton(initialProject, initialProjectID);
 };
