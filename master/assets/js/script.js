@@ -232,7 +232,7 @@ const handleClickProjectButton = (project, index) => {
 
   DOM.macbookProjectMockup.setAttribute(
     "src",
-    `${CONFIG.assets.projects}/${project.imgLink}`
+    `${CONFIG.assets.projects}/${project.img}`
   );
   DOM.gotoProjectLink.setAttribute("href", projectLiveUrl);
   DOM.gotoProjectButton.textContent = `Go to ${formatProjectName(
