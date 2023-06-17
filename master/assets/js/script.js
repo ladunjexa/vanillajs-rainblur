@@ -110,11 +110,12 @@ window.onload = function () {
   DOM.viewLessButton.classList.add("opacity-50");
 
   // Load random initial project
-  const initialProject = RANDOM_INITIAL_PROJECT
-    ? projectsData[Math.floor(Math.random() * displayedProjects)]
-    : projectsData[0];
+  const initialProjectID = RANDOM_INITIAL_PROJECT
+    ? Math.floor(Math.random() * displayedProjects)
+    : 0;
+  const initialProject = projectsData[initalProjectID];
 
-  handleClickProjectButton(initialProject);
+  handleClickProjectButton(initialProject, initialProjectID);
 };
 
 /**
