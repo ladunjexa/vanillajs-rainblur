@@ -12,7 +12,8 @@ const RANDOM_INITIAL_PROJECT = false;
  *
  * @type {number}
  */
-const MAX_DISPLAYED_PROJECTS = 10;
+const MAX_DISPLAYED_PROJECTS =
+  projectsData.length < 10 ? projectsData.length : 10;
 
 /**
  * The number of projects currently displayed.
@@ -108,7 +109,12 @@ window.onload = function () {
   // Disable view less button
   DOM.viewLessButton.disabled = true;
   DOM.viewLessButton.classList.add("opacity-50");
-
+  
+  // Disable view more button if all projects have been displayed
+  if (MAX_DISPLAYED_PROJECTS >= projectsData.length) {
+    DOM.viewMoreButton.disabled = true;
+    DOM.viewMoreButton.classList.add("opacity-50");
+  }
   // Load random initial project
   const initialProjectID = RANDOM_INITIAL_PROJECT
     ? Math.floor(Math.random() * displayedProjects)
