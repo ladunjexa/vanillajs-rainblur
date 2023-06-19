@@ -232,9 +232,9 @@ const handleClickProjectButton = (project, index) => {
   const { className, activeClassName } = webData.dialog.buttonProps;
 
   let projectButtons = document.querySelectorAll(".project-button");
-  let projectLiveUrl = `${project.liveUrl ?? `https://${CONFIG.ghRepo.user}.github.io/${
+  let projectLiveUrl = `${project.href ?? `https://${CONFIG.ghRepo.user}.github.io/${
     CONFIG.ghRepo.name
-  }/${project.href ?? formatProjectName(project.name, true)}`}`;
+  }/${project.to ?? formatProjectName(project.name, true)}`}`;
   projectButtons.forEach(
     (button) => (button.className = `project-button ${className}`)
   );
