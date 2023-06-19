@@ -170,13 +170,16 @@ export const projectsData = [
     number: 1,
     name: "Project Name",
     img: `${CONFIG.assets.projects}/project-image.png`,
-    liveUrl: "https://www.example.com",
+    to: 'project/PROJECT-NAME',
+    href: "https://www.example.com",
   },
   // Add more project objects as needed
 ];
 ```
 
-Note: The `liveUrl` property can serve as a direct link to the live version of the project. By default, it will go to `https://<your-github-username>.github.io/<your-repo-name>/<project-name>` if not specified.
+Note: The `href` property can serve as a direct link to the live version of the project. By default, it will go to `https://<your-github-username>.github.io/<your-repo-name>/<project-name>` if not specified.
+
+Note: The `to` property can serve as a local endpoint for the project. By default, it will go to `/<project-name>` if not specified.
 
 Make sure to follow the suggested folder structure for projects to ensure proper rendering and functionality of the showcase.
 
@@ -195,7 +198,8 @@ To showcase your projects on the website, follow these steps:
    - `number` (optional): A number to represent the project's order (e.g., 1, 2, 3).
    - `name`: The name or title of the project.
    - `img`: The file name of the project's preview image. Ensure the image file is placed in the `media/projects` folder.
-   - `liveUrl` (optional): The URL of the live version of the project.
+   - `to`: The local endpoint for the project. By default, it will go to `/<project-name>` if not specified.
+   - `href` (optional): The URL of the version of the project.
 
 ```javascript
 export const projectsData = [
@@ -203,7 +207,8 @@ export const projectsData = [
     number: 1,
     name: "Project Name",
     img: "project_image.jpg",
-    liveUrl: "https://www.example.com",
+    to: 'project/PROJECT-NAME',
+    href: "https://www.example.com",
     },
     // Add more project objects as needed
 ];
