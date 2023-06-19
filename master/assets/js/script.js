@@ -108,12 +108,14 @@ window.onload = function () {
 
   // Disable view less button
   DOM.viewLessButton.disabled = true;
-  DOM.viewLessButton.classList.add("opacity-50");
+  DOM.viewLessButton.textContent = null;
+  // DOM.viewLessButton.classList.add("opacity-50");
   
   // Disable view more button if all projects have been displayed
   if (MAX_DISPLAYED_PROJECTS >= projectsData.length) {
     DOM.viewMoreButton.disabled = true;
-    DOM.viewMoreButton.classList.add("opacity-50");
+    DOM.viewMoreButton.textContent = null;
+    // DOM.viewMoreButton.classList.add("opacity-50");
   }
   // Load random initial project
   const initialProjectID = RANDOM_INITIAL_PROJECT
@@ -150,13 +152,15 @@ DOM.viewLessButton.onclick = () => {
   // Disable the button and apply opacity class if the number of displayed projects is less than or equal to {MAX_DISPLAYED_PROJECTS}
   if (displayedProjects <= MAX_DISPLAYED_PROJECTS) {
     DOM.viewLessButton.disabled = true;
-    DOM.viewLessButton.classList.add("opacity-50");
+    DOM.viewLessButton.textContent = null;
+    // DOM.viewLessButton.classList.add("opacity-50");
   }
 
   // Enable the "View More" button and remove opacity class if the number of displayed projects is greater than {MAX_DISPLAYED_PROJECTS}
   if (displayedProjects < projectsData.length) {
     DOM.viewMoreButton.disabled = false;
-    DOM.viewMoreButton.classList.remove("opacity-50");
+    DOM.viewMoreButton.textContent = 'view more';
+    // DOM.viewMoreButton.classList.remove("opacity-50");
   }
 };
 
@@ -184,13 +188,15 @@ DOM.viewMoreButton.onclick = () => {
   if (displayedProjects === projectsData.length) {
     // Disable the button and apply opacity class if all projects have been displayed
     DOM.viewMoreButton.disabled = true;
-    DOM.viewMoreButton.classList.add("opacity-50");
+    DOM.viewMoreButton.textContent = null;
+    // DOM.viewMoreButton.classList.add("opacity-50");
   }
 
   // Enable the "View Less" button and remove opacity class if the number of displayed projects is greater than {MAX_DISPLAYED_PROJECTS}
   if (displayedProjects > MAX_DISPLAYED_PROJECTS) {
     DOM.viewLessButton.disabled = false;
-    DOM.viewLessButton.classList.remove("opacity-50");
+    DOM.viewLessButton.textContent = 'view less';
+    // DOM.viewLessButton.classList.remove("opacity-50");
   }
 };
 
