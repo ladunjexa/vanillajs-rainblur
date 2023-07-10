@@ -1,5 +1,31 @@
-
 <p align="center"><img src="https://github.com/ladunjexa/Rainblur-Showcase/blob/main/.github/assets/img2.png?raw=true" width="70%" /></p>
+<p align="center">
+<!-- Badges -->
+  <a href="https://github.com/ladunjexa">
+    <img src="https://custom-icon-badges.demolab.com/badge/made%20by%20-ladunjexa-556bf2?style=flat-square&logo=github&logoColor=white&labelColor=101827" alt="made by @ladunjexa" />
+  </a>
+  <a href="https://github.com/ladunjexa/GitHub-Webpage/blob/master/LICENSE">
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="license" />
+  </a>
+  <a href="https://github.com/ladunjexa/GitHub-Webpage/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/ladunjexa/GitHub-Webpage" alt="contributors" />
+  </a>
+  <a href="">
+    <img src="https://img.shields.io/github/last-commit/ladunjexa/GitHub-Webpage" alt="last update" />
+  </a>
+  <a href="https://github.com/ladunjexa/GitHub-Webpage/network/members">
+    <img src="https://img.shields.io/github/forks/ladunjexa/GitHub-Webpage" alt="forks" />
+  </a>
+  <a href="https://github.com/ladunjexa/GitHub-Webpage/stargazers">
+    <img src="https://img.shields.io/github/stars/ladunjexa/GitHub-Webpage" alt="stars" />
+  </a>
+  <a href="https://github.com/ladunjexa/GitHub-Webpage/issues/">
+    <img src="https://img.shields.io/github/issues/ladunjexa/GitHub-Webpage" alt="open issues" />
+  </a>
+  <a href="https://github.com/ladunjexa/GitHub-Webpage/issues/">
+    <img src="https://img.shields.io/badge/PRs-welcome-pink.svg" alt="prs welcome" />
+  </a>
+</p>
 <a name="readme-top"></a>
 
 # *Rainblur Showcase*
