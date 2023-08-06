@@ -10,7 +10,7 @@ export const CONFIG = {
   },
 
   ghRepo: {
-    name: "50-Projects-In-50-Days",
+    name: "Rainblur-Showcase",
     user: "ladunjexa",
   },
 };
